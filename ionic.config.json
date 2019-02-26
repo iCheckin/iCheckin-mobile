@@ -1,6 +1,8 @@
 {
   "name": "iCheckin",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "0c1ee9eb"
 }

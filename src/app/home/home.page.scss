@@ -1,1 +1,36 @@
+ion-content{
+    --padding-top: 20vh;
+}
 
+div.loginElements{
+
+    font-family: roboto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h1{
+        font-size: 40px;
+        color: var(--ion-color-primary);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    ion-input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        --padding-start: 10px;
+        border: 1px solid var(--ion-color-primary);
+        border-radius: 10px;
+    }
+
+    ion-button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div.externalLink{
+        text-align: center;
+    }
+
+}

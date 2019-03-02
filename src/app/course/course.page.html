@@ -1,0 +1,42 @@
+
+
+<ion-content>
+
+  <div class="headerInfo" *ngIf="course">
+    <ion-back-button defaultHref="courses" text="Back"></ion-back-button>
+    <h1>{{course.courseCode}}</h1>
+    <p>{{course.courseName}}</p>
+    <p>{{course.courseId}}</p>
+  </div>
+
+  <div class="sessionInfo" *ngIf="session && attended">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+
+
+          <div class="sessionCard" *ngFor="let s of session; let i = index">
+            <div class="cardTitle">
+              <span>Session {{i+1}}</span>
+            </div>
+            <div class="cardContent">
+              <span class="date">{{s.createdAt.toDate() | date:'mediumDate'}}</span>
+
+              <span *ngIf="attended.includes(s.sid); else elseBlock" class="status">attended</span>
+              <ng-template #elseBlock>
+                <span class="status missed">missed</span>
+              </ng-template>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-button id="code" (click)="onCode()">Code</ion-button>
+  <ion-button id="scan" (click)="onScan()">Scan</ion-button>
+</ion-footer>

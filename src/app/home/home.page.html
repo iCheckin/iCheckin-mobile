@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Ionic Blank
@@ -9,4 +9,18 @@
 <ion-content padding>
   The world is your oyster.
   <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+</ion-content> -->
+
+
+<ion-content padding>
+  <div class="loginElements">
+    <h1>iCheckin</h1>
+    <ion-input name="email" placeholder="Email" [(ngModel)]="input_email"></ion-input>
+    <ion-input name="password" placeholder="Password" type="password" [(ngModel)]="input_password"></ion-input>
+    <ion-button color="primary" expand="block" (click)="onLogin()">Login</ion-button>
+    <!-- <ion-label>Do not have an account? Sign up</ion-label> -->
+    <div class="externalLink">
+      <a href="">Do not have an account? Sign up</a>
+    </div>
+  </div>
 </ion-content>

@@ -1,3 +1,6 @@
 # iCheckin-mobile
 
-# Temporary ReadMe File
+# To start
+
+npm install
+ionic lab

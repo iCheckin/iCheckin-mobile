@@ -1,6 +1,9 @@
 # iCheckin-mobile
 
-# To start
-
+### To start
+```
 npm install
+```
+```
 ionic lab
+```
